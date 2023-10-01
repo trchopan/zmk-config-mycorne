@@ -33,8 +33,8 @@
         lower_layer {
             bindings = <
 &kp TILDE   &kp N1             &kp N2             &kp N3             &kp N4  &kp N5       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0         &kp BSPC
-&trans      &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &trans             &trans  &trans       &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp PAGE_UP    &kp HOME
-&kp ESCAPE  &kp LS(LA(LC(E)))  &kp LS(LA(LC(T)))  &kp LS(LA(LC(B)))  &trans  &trans       &kp RG(H)  &kp RG(J)  &kp RG(K)  &kp RG(L)  &kp PAGE_DOWN  &kp END
+&trans      &kp LS(LA(LC(A)))  &kp LS(LA(LC(S)))  &kp S              &kp D   &kp F        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp PAGE_UP    &kp HOME
+&kp ESCAPE  &kp LS(LA(LC(E)))  &kp LS(LA(LC(T)))  &kp LS(LA(LC(B)))  &kp R   &kp V        &kp RG(H)  &kp RG(J)  &kp RG(K)  &kp RG(L)  &kp PAGE_DOWN  &kp END
                                                   &kp LGUI           &trans  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
