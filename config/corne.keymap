@@ -17,28 +17,28 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                         &kp LEFT_GUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp ESCAPE  &kp Q        &kp W       &kp E       &kp R             &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P                &kp BACKSLASH
+&kp GRAVE   &mt LCTRL A  &mt LALT S  &mt LCMD D  &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RIGHT_COMMAND K  &mt RIGHT_ALT L  &mt RCTRL SEMICOLON  &kp SQT
+&caps_word  &kp Z        &kp X       &kp C       &kp V             &kp B        &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH             &kp MINUS
+                                     &mo 2       &mo 1             &kp SPACE    &kp RET  &kp BACKSPACE      &kp TAB
             >;
         };
 
         lower_layer {
             bindings = <
-&kp ESCAPE  &kp N1  &kp N2  &kp N3         &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0                    &kp BSPC
-&trans      &trans  &trans  &trans         &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp LC(LS(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))
-&trans      &trans  &trans  &trans         &trans  &trans       &trans    &trans    &trans    &trans     &trans                    &tog 4
-                            &kp RIGHT_GUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7          &kp N8        &kp NUMBER_9  &kp NUMBER_0              &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &trans
+&tog 4  &trans        &trans        &trans        &trans        &trans          &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp LC(LS(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))
+                                    &trans        &trans        &trans          &trans        &trans          &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &kp BSPC
-&trans     &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp PAGE_UP    &kp HOME
-&trans     &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PAGE_DOWN  &kp END
-                             &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp EXCL               &kp AT                 &kp HASH  &kp DLLR       &kp PRCNT            &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR     &trans
+&trans  &kp LS(LA(MINUS))      &kp LA(LS(EQUAL))      &trans    &kp LS(LA(K))  &kp LC(LS(LA(K)))    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp PAGE_UP  &kp PAGE_DOWN
+&trans  &kp LS(LA(LC(MINUS)))  &kp LC(LS(LA(EQUAL)))  &trans    &kp LS(LA(J))  &kp LA(LS(LC(J)))    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp HOME     &kp END
+                                                      &trans    &trans         &trans               &trans     &trans     &trans
             >;
         };
 
@@ -53,10 +53,10 @@
 
         mouse_layer {
             bindings = <
-&none  &none  &none  &none     &kp R   &none    &none  &none   &none  &none  &none  &kp BSPC
-&none  &none  &kp S  &kp D     &kp F   &none    &kp H  &kp J   &kp K  &kp L  &none  &none
-&none  &none  &none  &none     &kp V   &kp B    &none  &none   &none  &none  &none  &to 0
-                     &kp RGUI  &trans  &none    &none  &trans  &none
+&trans  &trans         &trans  &trans  &kp R   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RIGHT_GUI  &kp S   &kp D   &kp F   &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&tog 4  &trans         &trans  &trans  &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
