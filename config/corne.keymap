@@ -18,13 +18,19 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <0 1>;
-            layers = <0 1 2>;
+            layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <10 11>;
+            layers = <0>;
         };
     };
 
