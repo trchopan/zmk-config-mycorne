@@ -51,10 +51,10 @@
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp EXCL               &kp AT                 &kp HASH  &kp DLLR           &kp PRCNT            &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BACKSPACE
-&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &trans    &kp LS(LA(LC(K)))  &kp LA(LC(LS(J)))    &trans     &kp MINUS  &kp PLUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PAGE_UP
-&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &trans    &kp LS(LA(K))      &kp LS(LA(J))        &trans     &kp UNDER  &kp EQUAL        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PAGE_DOWN
-                                                         &trans    &trans             &kp ESCAPE           &kp RET    &trans     &trans
+&kp GRAVE  &kp EXCL               &kp AT                 &kp HASH  &kp DLLR           &kp PRCNT            &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BACKSPACE
+&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &trans    &kp LS(LA(LC(K)))  &kp LA(LC(LS(J)))    &trans     &kp UNDERSCORE  &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PAGE_UP
+&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &trans    &kp LS(LA(K))      &kp LS(LA(J))        &trans     &kp MINUS       &kp PLUS         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PAGE_DOWN
+                                                         &trans    &trans             &kp ESCAPE           &kp RET    &trans          &trans
             >;
         };
 
