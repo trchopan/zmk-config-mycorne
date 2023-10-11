@@ -33,7 +33,7 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp MINUS
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F     &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V     &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
                          &kp LALT  &kp LGUI  &kp SPACE    &kp RET  &mo 1  &mo 2
@@ -42,19 +42,19 @@
 
         lower_layer {
             bindings = <
-&trans  &trans     &kp N7        &kp N8        &kp N9        &kp N0         &trans     &trans     &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp BACKSPACE
-&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT             &kp LC(LS(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))
-&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &trans     &kp MINUS  &kp PLUS         &trans                &kp SLASH                 &kp LS(LC(LA(SPACE)))
-                                 &trans        &trans        &kp SPACE      &kp ENTER  &trans     &trans
+&trans  &trans     &kp N7        &kp N8        &kp N9        &kp N0         &trans     &trans    &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT   &kp DOWN  &kp UP           &kp RIGHT             &kp PLUS               &kp EQUAL
+&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &trans     &trans    &trans           &trans                &kp SLASH              &kp MINUS
+                                 &trans        &trans        &kp SPACE      &kp ENTER  &trans    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp EXCL               &kp AT                 &kp HASH  &kp DLLR           &kp PRCNT            &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR          &kp RPAR           &kp BACKSPACE
-&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &trans    &kp LS(LA(LC(K)))  &kp LA(LC(LS(J)))    &trans     &kp UNDERSCORE  &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PAGE_UP
-&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &trans    &kp LS(LA(K))      &kp LS(LA(J))        &trans     &kp MINUS       &kp PLUS         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp PAGE_DOWN
-                                                         &trans    &trans             &kp ESCAPE           &kp RET    &trans          &trans
+&kp GRAVE  &kp EXCL               &kp AT                 &kp HASH  &kp DLLR           &kp PRCNT            &kp CARET      &kp AMPS                  &kp KP_MULTIPLY            &kp LPAR          &kp RPAR           &kp BACKSPACE
+&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &trans    &kp LS(LA(LC(K)))  &kp LA(LC(LS(J)))    &kp PAGE_UP    &kp LS(LC(LEFT_BRACKET))  &kp LS(LC(RIGHT_BRACKET))  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp HOME
+&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &trans    &kp LS(LA(K))      &kp LS(LA(J))        &kp PAGE_DOWN  &trans                    &trans                     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp END
+                                                         &trans    &trans             &kp ESCAPE           &kp RET        &trans                    &trans
             >;
         };
 
