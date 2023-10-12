@@ -48,19 +48,19 @@
 
         lower_layer {
             bindings = <
-&trans  &trans     &kp N7        &kp N8        &kp N9        &kp N0         &none            &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN        &kp UP           &kp RIGHT             &kp PLUS               &kp MINUS
-&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL       &kp COMMA        &kp DOT               &kp SLASH              &kp LA(BACKSPACE)
-                                 &trans        &trans        &kp SPACE      &kp ENTER        &trans          &trans
+&trans  &none      &kp N7        &kp N8        &kp N9        &kp N0         &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &kp BACKSPACE
+&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp PLUS           &kp MINUS
+&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL        &kp COMMA             &kp DOT                &kp SLASH          &kp LG(Z)
+                                 &trans        &trans        &kp SPACE      &kp ENTER        &trans           &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp LC(LEFT)           &kp LC(RIGHT_ARROW)    &kp LC(LS(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))  &none            &none     &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
-&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &kp LC(LS(LA(K)))         &kp LS(LA(LC(J)))          &kp PAGE_UP      &kp HOME  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH          &kp DOLLAR         &kp PERCENT
-&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &kp LS(LA(K))             &kp LS(LA(J))              &kp PAGE_DOWN    &kp END   &kp GRAVE        &kp TILDE        &kp CARET         &kp AMPERSAND      &kp LG(Z)
-                                                         &trans                    &trans                     &kp ESCAPE       &kp RET   &trans           &trans
+&kp GRAVE  &kp LC(LEFT)           &kp LC(RIGHT_ARROW)    &kp LC(LS(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))  &none            &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LA(BACKSPACE)  &kp BACKSPACE
+&kp TILDE  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &kp LC(LS(LA(K)))         &kp LS(LA(LC(J)))          &kp PAGE_UP      &kp HOME        &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR         &kp PERCENT
+&trans     &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &kp LS(LA(K))             &kp LS(LA(J))              &kp PAGE_DOWN    &kp END         &kp GRAVE        &kp TILDE         &kp CARET          &kp AMPERSAND      &kp LG(Z)
+                                                         &trans                    &trans                     &kp ESCAPE       &kp RET         &trans           &trans
             >;
         };
 
