@@ -30,7 +30,7 @@
         combo_toggle_layer_1 {
             bindings = <&tog 1>;
             key-positions = <37 29>;
-            layers = <0>;
+            layers = <0 1>;
         };
     };
 
