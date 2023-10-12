@@ -49,8 +49,8 @@
         lower_layer {
             bindings = <
 &trans  &trans     &kp N7        &kp N8        &kp N9        &kp N0         &kp CARET        &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &kp BACKSPACE
-&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN   &kp UP                &kp RIGHT              &kp LA(LEFT)       &kp LA(RIGHT)
-&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL  &kp PLUS              &kp MINUS              &kp SLASH          &trans
+&trans  &kp CARET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN   &kp UP                &kp RIGHT              &kp LG(Z)          &kp PERIOD
+&trans  &kp RGUI   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL  &kp PLUS              &kp MINUS              &kp SLASH          &kp COMMA
                                  &trans        &trans        &kp SPACE      &kp ENTER        &trans     &trans
             >;
         };
