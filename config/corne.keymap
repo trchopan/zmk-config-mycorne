@@ -38,6 +38,12 @@
             key-positions = <36 28>;
             layers = <0 3>;
         };
+
+        combo_active_layer_3 {
+            bindings = <&mo 3>;
+            key-positions = <41 40>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -82,11 +88,6 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        activate_tri {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
     };
 };
 
