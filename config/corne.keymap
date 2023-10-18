@@ -27,19 +27,19 @@
             layers = <0>;
         };
 
-        combo_toggle_layer_1 {
-            bindings = <&tog 1>;
+        combo_layer_1 {
+            bindings = <&mo 1>;
             key-positions = <37 29>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
-        combo_toggle_layer_3 {
-            bindings = <&tog 3>;
+        combo_layer_3_left {
+            bindings = <&mo 3>;
             key-positions = <36 28>;
-            layers = <0 3>;
+            layers = <0>;
         };
 
-        combo_active_layer_3 {
+        combo_layer_3_right {
             bindings = <&mo 3>;
             key-positions = <41 40>;
             layers = <0>;
