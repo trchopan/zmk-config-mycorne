@@ -30,19 +30,19 @@
         combo_layer_1 {
             bindings = <&mo 1>;
             key-positions = <37 29>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         combo_layer_3_left {
             bindings = <&mo 3>;
             key-positions = <36 28>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         combo_layer_3_right {
             bindings = <&mo 3>;
             key-positions = <41 40>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
     };
 
@@ -60,10 +60,10 @@
 
         lower_layer {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &kp BACKSPACE
-&trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp PLUS           &kp MINUS
-&trans  &kp RGUI      &kp CARET     &kp PERCENT   &kp DOLLAR    &trans          &kp KP_MULTIPLY  &kp EQUAL        &kp COMMA             &kp DOT                &kp SLASH          &kp LG(Z)
-                                    &trans        &trans        &kp SPACE       &kp ENTER        &trans           &trans
+&trans  &none         &kp N7        &kp N8        &kp N9        &kp CARET      &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &kp BACKSPACE
+&trans  &kp NUMBER_0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp PLUS           &kp MINUS
+&trans  &kp RGUI      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL        &kp COMMA             &kp DOT                &kp SLASH          &kp LG(Z)
+                                    &trans        &trans        &kp SPACE      &kp ENTER        &trans           &trans
             >;
         };
 
@@ -78,10 +78,10 @@
 
         tri_layer {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2              &bt BT_SEL 3              &bt BT_SEL 4            &kp C_PLAY_PAUSE  &kp K_BACK  &kp K_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
-&trans  &trans        &kp LS(LG(NUMBER_3))  &kp LG(LC(LS(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(NUMBER_5))    &kp F1            &kp F4      &none       &kp F11            &none            &trans
-&trans  &trans        &trans                &none                     &none                     &trans                  &kp F2            &kp F5      &none       &none              &none            &bt BT_CLR
-                                            &trans                    &trans                    &trans                  &trans            &trans      &trans
+&trans  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2              &bt BT_SEL 3              &bt BT_SEL 4            &kp C_PLAY_PAUSE  &kp K_BACK  &kp K_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
+&trans  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LC(LS(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(NUMBER_5))    &kp F1            &kp F4      &none       &kp F11            &none            &trans
+&trans  &trans                &trans                &none                     &none                     &trans                  &kp F2            &kp F5      &none       &none              &none            &bt BT_CLR
+                                                    &trans                    &trans                    &trans                  &trans            &trans      &trans
             >;
         };
     };
