@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE_LAYER1_RGUI";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&kp RGUI>;
+            bindings = <&mo 1>, <&kt RGUI>;
 
             tapping-term-ms = <100>;
         };
