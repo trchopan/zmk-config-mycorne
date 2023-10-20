@@ -70,7 +70,7 @@
         lower_layer {
             bindings = <
 &trans  &none         &kp N7        &kp N8        &kp N9        &kp CARET      &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)  &kp BACKSPACE
-&trans  &none         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp PLUS           &kp MINUS
+&trans  &none         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp KP_PLUS        &kp MINUS
 &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY  &kp EQUAL        &kp COMMA             &kp DOT                &kp SLASH          &kp LG(Z)
                                     &trans        &trans        &kp SPACE      &kp ENTER        &trans           &trans
             >;
