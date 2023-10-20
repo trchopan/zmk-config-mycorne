@@ -41,11 +41,11 @@
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&mo 4>;
         };
-        dance_ctrl_layer3: dance_ctrl_layer3 {
+        dance_lalt_layer3: dance_lalt_layer3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE_CTRL_LAYER3";
+            label = "DANCE_LALT_LAYER3";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&mo 3>;
+            bindings = <&kp LALT>, <&mo 3>;
         };
         dance_layer2_layer3: dance_layer2_layer3 {
             compatible = "zmk,behavior-tap-dance";
@@ -63,7 +63,7 @@
 &kp TAB    &kp Q  &kp W  &kp E               &kp R               &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P     &kp MINUS
 &kp LCTRL  &kp A  &kp S  &kp D               &kp F               &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C               &kp V               &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp FSLH  &kp BACKSLASH
-                         &dance_ctrl_layer3  &dance_rgui_layer4  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
+                         &dance_lalt_layer3  &dance_rgui_layer4  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
             >;
         };
 
