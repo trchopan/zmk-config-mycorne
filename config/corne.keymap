@@ -59,11 +59,11 @@
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&mo 4>;
         };
-        dance_lalt_layer3: dance_lalt_layer3 {
+        dance_shift_layer3: dance_shift_layer3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE_LALT_LAYER3";
+            label = "DANCE_SHIFT_LAYER3";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&mo 3>;
+            bindings = <&kp LEFT_SHIFT>, <&mo 3>;
         };
         dance_layer2_layer3: dance_layer2_layer3 {
             compatible = "zmk,behavior-tap-dance";
@@ -78,10 +78,10 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E               &kp R               &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D               &kp F               &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C               &kp V               &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp FSLH  &kp BACKSLASH
-                         &dance_lalt_layer3  &dance_rgui_layer4  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
+&kp TAB    &kp Q  &kp W  &kp E                &kp R               &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P      &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D                &kp F               &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&kp LALT   &kp Z  &kp X  &kp C                &kp V               &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp SLASH  &kp BACKSLASH
+                         &dance_shift_layer3  &dance_rgui_layer4  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
             >;
         };
 
@@ -89,7 +89,7 @@
             bindings = <
 &trans  &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp CARET      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp BACKSPACE
 &trans  &kp TILDE     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR     &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp AMPERSAND  &trans
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY   &kp EQUAL          &kp COMMA             &kp DOT                &kp SLASH      &trans
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT    &kp KP_MULTIPLY   &kp EQUAL          &kp COMMA             &kp DOT                &kp BACKSLASH  &trans
                                     &trans        &trans        &kp SPACE      &kp ENTER         &trans             &trans
             >;
         };
