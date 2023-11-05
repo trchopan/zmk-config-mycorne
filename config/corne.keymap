@@ -96,10 +96,10 @@
 
         raise_layer {
             bindings = <
-&none   &kp LC(LS(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))  &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)    &kp F1                    &kp F2                    &kp F3                    &kp F4                    &kp F5  &kp F6
-&trans  &kp LS(LA(MINUS))         &kp LS(LA(EQUAL))          &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &kp LC(LEFT)     &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none   &none
-&trans  &kp LC(LS(LA(MINUS)))     &kp LS(LA(LC(EQUAL)))      &kp LS(LA(K))      &kp LS(LA(J))      &kp LC(RIGHT)    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &none   &none
-                                                             &trans             &trans             &kp ESCAPE       &kp RET                   &trans                    &trans
+&none            &kp LC(LS(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))  &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)    &kp F1                    &kp F2                    &kp F3                    &kp F4                    &kp F5  &kp F6
+&kp LG(TAB)      &kp LS(LA(MINUS))         &kp LS(LA(EQUAL))          &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &kp LC(LEFT)     &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none   &none
+&kp LG(LS(TAB))  &kp LC(LS(LA(MINUS)))     &kp LS(LA(LC(EQUAL)))      &kp LS(LA(K))      &kp LS(LA(J))      &kp LC(RIGHT)    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &none   &none
+                                                                      &trans             &trans             &kp ESCAPE       &kp RET                   &trans                    &trans
             >;
         };
 
