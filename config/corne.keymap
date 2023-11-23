@@ -54,18 +54,21 @@
             #binding-cells = <0>;
             bindings = <&mo 1>, <&kp RGUI>;
         };
+
         dance_rgui_layer4: dance_rgui_layer4 {
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE_RGUI_LAYER4";
             #binding-cells = <0>;
             bindings = <&kp LGUI>, <&mo 4>;
         };
-        dance_shift_layer3: dance_shift_layer3 {
+
+        dance_alt_layer3: dance_alt_layer3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "DANCE_SHIFT_LAYER3";
+            label = "DANCE_ALT_LAYER3";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&mo 3>;
+            bindings = <&kp LEFT_ALT>, <&mo 3>;
         };
+
         dance_layer2_layer3: dance_layer2_layer3 {
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE_LAYER2_LAYER3";
@@ -79,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E               &kp R                &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P      &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D               &kp F                &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI   &kp SINGLE_QUOTE
-&kp LALT   &kp Z  &kp X  &kp C               &kp V                &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp SLASH  &kp BACKSLASH
-                         &dance_rgui_layer4  &dance_shift_layer3  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
+&kp TAB            &kp Q  &kp W  &kp E               &kp R           &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P      &kp BACKSPACE
+&kp LCTRL          &kp A  &kp S  &kp D               &kp F           &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI   &kp SINGLE_QUOTE
+&dance_alt_layer3  &kp Z  &kp X  &kp C               &kp V           &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp SLASH  &kp BACKSLASH
+                                 &dance_rgui_layer4  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
             >;
         };
 
@@ -107,8 +110,8 @@
         tri_layer {
             bindings = <
 &out OUT_TOG  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2              &bt BT_SEL 3              &bt BT_SEL 4            &kp C_PLAY_PAUSE  &kp K_BACK  &kp K_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
-&none         &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LC(LS(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(NUMBER_5))    &kp F1            &kp F2      &kp F3      &kp F4             &kp F5           &none
-&bt BT_CLR    &none                 &none                 &none                     &none                     &kp LS(LA(LC(Z)))       &kp F6            &kp F7      &kp F8      &kp F9             &kp F10          &none
+&bt BT_CLR    &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LG(LC(LS(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(NUMBER_5))    &kp F1            &kp F2      &kp F3      &kp F4             &kp F5           &none
+&none         &none                 &none                 &none                     &none                     &none                   &kp F6            &kp F7      &kp F8      &kp F9             &kp F10          &none
                                                           &none                     &none                     &none                   &none             &none       &none
             >;
         };
