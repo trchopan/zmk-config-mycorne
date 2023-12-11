@@ -47,6 +47,11 @@
             key-positions = <36 24>;
             layers = <0>;
         };
+
+        combo_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 1>;
+        };
     };
 
     behaviors {
