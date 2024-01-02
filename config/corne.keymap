@@ -107,10 +107,10 @@
 
         raise_layer {
             bindings = <
-&kp LS(TAB)               &kp LC(LS(LEFT_BRACKET))  &kp LC(LS(RIGHT_BRACKET))  &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)    &kp LA(LC(LS(A)))         &kp LA(LC(LS(B)))         &kp LA(LC(LS(T)))         &kp LA(LC(LS(S)))         &kp LA(LC(LS(E)))  &none
-&kp LC(LA(LS(NUMBER_1)))  &kp LS(LA(MINUS))         &kp LS(LA(EQUAL))          &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &kp LC(LEFT)     &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none              &none
-&kp LS(LA(LC(NUMBER_2)))  &kp LC(LS(LA(MINUS)))     &kp LS(LA(LC(EQUAL)))      &kp LS(LA(K))      &kp LS(LA(J))      &kp LC(RIGHT)    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &kp LS(LC(LA(X)))  &kp LS(LA(LC(SLASH)))
-                                                                               &trans             &trans             &kp ESCAPE       &kp RET                   &trans                    &trans
+&kp LS(TAB)               &kp LC(LS(PAGE_DOWN))  &kp LC(LS(PAGE_UP))    &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)    &kp LA(LC(LS(A)))         &kp LA(LC(LS(B)))         &kp LA(LC(LS(T)))         &kp LA(LC(LS(S)))         &kp LA(LC(LS(E)))  &none
+&kp LC(LA(LS(NUMBER_1)))  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &kp LC(LEFT)     &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none              &none
+&kp LS(LA(LC(NUMBER_2)))  &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &kp LS(LA(K))      &kp LS(LA(J))      &kp LC(RIGHT)    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &kp LS(LC(LA(X)))  &kp LS(LA(LC(SLASH)))
+                                                                        &trans             &trans             &kp ESCAPE       &kp RET                   &trans                    &trans
             >;
         };
 
