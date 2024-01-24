@@ -24,13 +24,6 @@
             bindings = <&kp MINUS &kp GT>;
             label = "ARROW_KEY_SMALL";
         };
-
-        plus_equal: plus_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS &kp EQUAL>;
-            label = "PLUS_EQUAL";
-        };
     };
 
     combos {
@@ -62,20 +55,6 @@
             bindings = <&mo 1>, <&kp RGUI>;
         };
 
-        dance_rgui_layer4: dance_rgui_layer4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCE_RGUI_LAYER4";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&mo 4>;
-        };
-
-        dance_alt_layer3: dance_alt_layer3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DANCE_ALT_LAYER3";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&mo 3>;
-        };
-
         dance_layer2_layer3: dance_layer2_layer3 {
             compatible = "zmk,behavior-tap-dance";
             label = "DANCE_LAYER2_LAYER3";
@@ -89,10 +68,10 @@
 
         default_layer {
             bindings = <
-&kp TAB            &kp Q  &kp W  &kp E               &kp R           &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P      &kp BACKSPACE
-&kp LCTRL          &kp A  &kp S  &kp D               &kp F           &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI   &kp MINUS
-&dance_alt_layer3  &kp Z  &kp X  &kp C               &kp V           &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp SLASH  &kp LA(BACKSPACE)
-                                 &dance_rgui_layer4  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
+&kp TAB       &kp Q  &kp W  &kp E         &kp R           &kp T        &kp Y    &kp U               &kp I                 &kp O    &kp P      &kp BACKSPACE
+&kp LCTRL     &kp A  &kp S  &kp D         &kp F           &kp G        &kp H    &kp J               &kp K                 &kp L    &kp SEMI   &kp MINUS
+&kp LEFT_ALT  &kp Z  &kp X  &kp C         &kp V           &kp B        &kp N    &kp M               &kp COMMA             &kp DOT  &kp SLASH  &kp BACKSLASH
+                            &kp LEFT_GUI  &kp LEFT_SHIFT  &kp SPACE    &kp RET  &dance_layer1_rgui  &dance_layer2_layer3
             >;
         };
 
@@ -100,7 +79,7 @@
             bindings = <
 &trans  &kp GRAVE     &kp N7        &kp N8        &kp N9        &arrow_key_big    &arrow_key_small  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &trans  &kp CARET     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR        &kp LEFT          &kp DOWN          &kp UP             &kp RIGHT             &kp SINGLE_QUOTE       &kp MINUS
-&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT       &kp STAR          &kp EQUAL         &kp COMMA          &kp DOT               &kp BACKSLASH          &plus_equal
+&trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT       &kp STAR          &kp EQUAL         &kp COMMA          &kp DOT               &kp SLASH              &kp LA(BACKSPACE)
                                     &trans        &trans        &kp SPACE         &kp ENTER         &trans            &trans
             >;
         };
@@ -133,8 +112,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
