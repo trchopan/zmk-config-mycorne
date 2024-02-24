@@ -61,9 +61,9 @@
 
         lower_layer {
             bindings = <
-&kp GRAVE  &kp EXCL      &kp N7        &kp N8        &kp N9        &kp AMPERSAND    &kp HASH   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LA(BACKSPACE)
-&kp TILDE  &kp CARET     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR       &kp LEFT   &kp DOWN        &kp UP           &kp RIGHT             &kp PLUS               &kp MINUS
-&kp AT     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT      &kp STAR   &kp EQUAL       &kp COMMA        &kp DOT               &kp LEFT_BRACKET       &kp RIGHT_BRACKET
+&kp GRAVE  &kp TILDE     &kp N7        &kp N8        &kp N9        &kp AMPERSAND    &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&trans     &kp CARET     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR       &kp LEFT   &kp DOWN        &kp UP           &kp RIGHT             &kp PLUS               &kp MINUS
+&trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT      &kp STAR   &kp EQUAL       &kp COMMA        &kp DOT               &kp LEFT_BRACKET       &kp RIGHT_BRACKET
                                        &trans        &trans        &kp SPACE        &kp ENTER  &trans          &trans
             >;
         };
@@ -90,7 +90,7 @@
             bindings = <
 &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_5))      &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &none            &none         &none         &none         &none         &none         &bt BT_CLR
 &kp LS(LG(NUMBER_4))  &kp LS(LG(LC(NUMBER_4)))  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)  &kp LS(LG(A))    &none         &none         &none         &none         &none         &none
-&none                 &kp LG(NUMBER_0)          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(LS(Z))    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG
+&none                 &kp LG(NUMBER_0)          &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LS(LG(Z))    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG
                                                                   &none             &none             &none            &none         &none         &none
             >;
         };
