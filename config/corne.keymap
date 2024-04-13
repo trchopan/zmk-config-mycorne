@@ -45,6 +45,34 @@
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 3>;
         };
+
+        dance_display_prev: dance_display_prev {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_DISPLAY_PREV";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(H))>, <&kp LA(LS(LC(H)))>;
+        };
+
+        dance_display_next: dance_display_next {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_DISPLAY_NEXT";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(L))>, <&kp LA(LC(LS(L)))>;
+        };
+
+        dance_screen_1: dance_screen_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_SCREEN_1";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>, <&kp LS(LA(LC(NUMBER_1)))>;
+        };
+
+        dance_screen_2: dance_screen_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_SCREEN_2";
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT)>, <&kp LS(LA(LC(NUMBER_2)))>;
+        };
     };
 
     keymap {
@@ -70,10 +98,10 @@
 
         raise_layer {
             bindings = <
-&kp LS(TAB)               &kp LC(LS(PAGE_UP))    &kp LC(LS(PAGE_DOWN))  &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)    &kp LA(LC(LS(A)))         &kp LA(LC(LS(B)))         &kp LA(LC(LS(S)))         &kp LA(LC(LS(T)))         &kp LA(LC(LS(E)))  &none
-&kp LC(LA(LS(NUMBER_1)))  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &kp LC(LEFT)     &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none              &kp LS(LA(LC(M)))
-&kp LS(LA(LC(NUMBER_2)))  &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &kp LS(LA(K))      &kp LS(LA(J))      &kp LC(RIGHT)    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &kp LS(LC(LA(X)))  &kp LS(LA(LC(SLASH)))
-                                                                        &trans             &trans             &kp ESCAPE       &kp RET                   &trans                    &trans
+&kp LS(TAB)          &kp LC(LS(PAGE_UP))    &kp LC(LS(PAGE_DOWN))  &kp LC(LS(TAB))    &kp LC(TAB)        &kp LG(GRAVE)      &kp LA(LC(LS(A)))         &kp LA(LC(LS(B)))         &kp LA(LC(LS(S)))         &kp LA(LC(LS(T)))         &kp LA(LC(LS(E)))  &none
+&dance_display_prev  &kp LS(LA(MINUS))      &kp LS(LA(EQUAL))      &kp LC(LS(LA(K)))  &kp LS(LA(LC(J)))  &dance_screen_1    &kp HOME                  &kp PAGE_DOWN             &kp PAGE_UP               &kp END                   &none              &kp LS(LA(LC(M)))
+&dance_display_next  &kp LC(LS(LA(MINUS)))  &kp LS(LA(LC(EQUAL)))  &kp LS(LA(K))      &kp LS(LA(J))      &dance_screen_2    &kp LS(LC(LA(NUMBER_3)))  &kp LS(LC(LA(NUMBER_4)))  &kp LC(LA(LS(NUMBER_5)))  &kp LS(LC(LA(NUMBER_6)))  &kp LS(LC(LA(X)))  &kp LS(LA(LC(SLASH)))
+                                                                   &trans             &trans             &kp ESCAPE         &kp RET                   &trans                    &trans
             >;
         };
 
