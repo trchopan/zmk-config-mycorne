@@ -90,9 +90,9 @@
         lower_layer {
             bindings = <
 &kp GRAVE  &kp TILDE     &kp N7        &kp N8        &kp N9        &kp AMPERSAND    &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS   &kp BACKSPACE
-&trans     &kp CARET     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR       &kp LEFT   &kp DOWN              &kp UP                 &kp RIGHT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT      &kp STAR   &kp EQUAL             &kp COMMA              &kp DOT       &kp MINUS         &kp KP_PLUS
-                                       &trans        &trans        &kp SPACE        &kp ENTER  &trans                &trans
+&trans     &kp CARET     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR       &kp LEFT   &kp DOWN        &kp UP           &kp RIGHT             &kp LEFT_BRACKET        &kp RIGHT_BRACKET
+&trans     &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT      &kp STAR   &kp EQUAL       &kp COMMA        &kp DOT               &kp MINUS               &kp KP_PLUS
+                                       &trans        &trans        &kp SPACE        &kp ENTER  &trans          &trans
             >;
         };
 
